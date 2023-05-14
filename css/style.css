@@ -1,17 +1,12 @@
 /* Root Styles =====================================*/
-
 * { 
     border: 0px solid lightgrey; /* Set width to 1px to see all element borders */
 }
 
 :root {
     --center-padding: 15%;
-  }
-
-
-html {
     font-family: 'Poppins', sans-serif;
-}
+  }
 
 /* Header Styles =====================================*/
 header {
@@ -69,7 +64,6 @@ header {
     background-color: white;
     box-shadow: 0px 20px 10px -15px lightgrey;  
 }
-
     .website-gallery-element img {
         display: block; /* Remove whitespace under image */
         width: 100%;
@@ -228,7 +222,6 @@ footer {
 }
 
 /* Responsive Adjustments ============================*/
-
 @media only screen and (max-width: 700px) {
     :root {
       --center-padding: 5%;
