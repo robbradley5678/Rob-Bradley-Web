@@ -1,0 +1,270 @@
+/* Root Styles =====================================*/
+
+* { 
+    border: 0px solid lightgrey; /* Set width to 1px to see all element borders */
+}
+
+:root {
+    --center-padding: 15%;
+  }
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles =====================================*/
+header {
+    padding: 75px var(--center-padding) 0px var(--center-padding);
+    display: flex;
+    justify-content: space-between;
+    color: #ff8c00;
+}
+    header span {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    header h1 {
+        font-size: 100px;
+        margin: 0;
+    }
+
+    #header-col-1 {
+        width: 100%;
+    }
+
+#header-img {
+    width: 175px;
+    height: auto;
+    float: right;
+    border-radius: 100%;
+}
+
+#header-img-mobile {
+    display: block;
+    width: 175px;
+    height: auto;
+    float: right;
+    border-radius: 100%;
+}
+
+.intro-text {
+    padding: 50px 25%;;
+    line-height: 1.8rem;
+    font-size: 20px;
+    color: #404040;
+}
+
+/* Gallery Styles =====================================*/
+.website-gallery {
+    background-color: #ebebeb;
+    padding: 25px var(--center-padding);
+}
+
+.website-gallery-element {
+    color: dimgrey;
+    margin: 75px 0;
+    border-radius: 0 0 25px 25px;
+    background-color: white;
+    box-shadow: 0px 20px 10px -15px lightgrey;  
+}
+
+    .website-gallery-element img {
+        display: block; /* Remove whitespace under image */
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .website-gallery-element a {
+        text-decoration: none;
+    }
+
+.website-gallery-text {
+    color: #404040;
+    padding: 10px 2.5%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.website-gallery-element h2 {
+    display: inline-block;
+    font-size: 36px;
+    margin: 10px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #404040;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;   
+    transition: 0.3s;
+}
+    button:hover {
+        background-color: #ff8c00;
+        border: 2px solid #ff8c00;
+        color: white;
+    
+    }
+
+.primary-button {
+    background-color: #404040;
+    color: white;
+}
+
+.collapsible-content {
+    line-height: 1.8rem;
+    color: #404040;
+    padding: 0 2.5%;
+    margin: 0 10px;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;   
+}
+
+.under-construction {
+    text-align: center;
+    background-color: #fce0bb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#hopwood button:hover {
+    background-color: #c46c00;
+    border: 2px solid #c46c00;
+    color: white;
+}
+
+#squirrel button:hover {
+    background-color: teal;
+    border: 2px solid teal;
+    color: white;
+}
+
+#gibson button:hover {
+    background-color: #a61919;
+    border: 2px solid #a61919;
+    color: white;
+}
+
+#rob button:hover {
+    background-color: #7cadcf;
+    border: 2px solid #7cadcf;
+    color: #404040;
+}
+
+#metro button:hover {
+    background-color: #664126;
+    border: 2px solid #664126;
+    color: white;
+}
+
+/* Form Styles =====================================*/
+.form-container {
+    padding: 50px var(--center-padding);
+}
+    .form-container h2 {
+        font-size: 48px;
+        color: #ff8c00;
+    }
+    .form-container p {
+        line-height: 1.8rem;
+        font-size: 20px;
+        color: #404040;
+        padding: 0 10%;
+        padding-bottom: 20px;
+    }
+
+form {
+    padding: 0;
+}
+
+.form-field {
+    width: 100%;
+    border: 2px solid lightgrey;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #404040;
+    transition: 0.3s;
+}      
+    .form-field:focus {
+        outline: none;
+        border: 2px solid #ff8c00;
+    }    
+
+.center-button {
+    text-align: center;
+}
+    .center-button button {
+        background-color: white;
+        border: 2px solid #ff8c00;
+        color: #ff8c00;
+    }
+        .center-button button:hover {
+            background-color: #ff8c00;
+            color: white;
+        }
+
+/* Footer Styles =====================================*/
+footer {
+    background-color: #ebebeb;
+    color: grey;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+}
+
+/* Responsive Adjustments ============================*/
+
+@media only screen and (max-width: 700px) {
+    :root {
+      --center-padding: 5%;
+    }
+
+    header span {
+        font-size: 26px;
+    }
+    header h1 {
+        font-size: 75px;
+    }
+
+    #header-img {
+        width: 30%;
+        max-width: 175px;
+    }
+
+    .intro-text {
+        padding: 50px 5%;
+    }
+
+    .form-container p {
+        padding: 1%;
+    }
+
+    .form-field {
+        width: 93%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    header span {
+        font-size: 24px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+  }
