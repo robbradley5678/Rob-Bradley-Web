@@ -272,7 +272,7 @@ a:focus-visible {
 .site-nav a {
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--colour-text-muted);
+  color: var(--colour-text);
   transition: color var(--transition-fast);
 }
 
@@ -346,7 +346,7 @@ a:focus-visible {
 
 .hero__bio {
   font-size: var(--text-lg);
-  color: var(--colour-text-muted);
+  color: var(--colour-text);
   margin-bottom: var(--space-4);
   max-width: 55ch;
 }
@@ -438,7 +438,7 @@ a:focus-visible {
 
 .project__summary {
   font-size: var(--text-lg);
-  color: var(--colour-text-muted);
+  color: var(--colour-text);
   line-height: 1.5;
 }
 
@@ -490,7 +490,7 @@ a:focus-visible {
 
 .project__detail p {
   font-size: var(--text-base);
-  color: var(--colour-text-muted);
+  color: var(--colour-text);
   line-height: 1.7;
   max-width: 60ch;
 }

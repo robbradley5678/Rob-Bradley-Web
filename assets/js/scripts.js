@@ -1,5 +1,4 @@
 
-
 /* ============= Light/dark toggle  ============= */
 
 const themeToggle = document.getElementById('themeToggle');
