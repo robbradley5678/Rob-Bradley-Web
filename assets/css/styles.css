@@ -506,7 +506,6 @@ a:focus-visible {
 .contact {
   padding-block: var(--space-24);
   background-color: var(--colour-surface);
-  border-top: 1px solid var(--colour-border);
   transition: background-color var(--transition-base);
 }
 
@@ -605,6 +604,8 @@ a:focus-visible {
   :root {
     --text-5xl: 3rem;
     --text-3xl: 2.6rem;
+    --text-lg:   1.1rem;
+    --text-base: 1rem;
     --container-pad: var(--space-5);
   }
 
@@ -641,6 +642,7 @@ a:focus-visible {
     aspect-ratio: 2;
     object-fit: cover
   }
+
 }
 
 
