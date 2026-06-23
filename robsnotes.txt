@@ -1,0 +1,6 @@
+
+Fonts not loading again
+- Audit all code and comments
+- Email
+- Lazy load below the fold Images
+- Audit linked sites
