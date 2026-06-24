@@ -63,8 +63,8 @@
   --colour-accent:       #869b9a;
   --colour-accent-hover: #708180;
   --colour-bg:         #161e1c;
-  --colour-bg-alt:     #0d1413;
-  --colour-surface:    #151d1b;
+  --colour-bg-alt:     #101716;
+  --colour-surface:    #161e1c;
   --colour-text:       #F0EDE8;
   --colour-text-muted: #e5e5e5;
   --colour-border:     #353f3f;
@@ -391,7 +391,7 @@ a:focus-visible {
 
 .project {
   background-color: var(--colour-surface);
-  border: 1px solid var(--colour-border);
+  /* border: 1px solid var(--colour-border); */
   box-shadow: var(--shadow);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -406,6 +406,7 @@ a:focus-visible {
   width: 100%;
   margin-bottom: var(--space-8);
   overflow: hidden;
+  background-color: #878787;
 }
 
 .project__image img {
@@ -643,10 +644,17 @@ a:focus-visible {
     aspect-ratio: 2;
     object-fit: cover
   }
-
 }
 
+@media (max-width: 365px) {
+  .btn {
+    font-size: 0.9rem;
+  }
 
+  .site-nav a {
+    font-size: 0.9rem;
+  }
+}
 
 /*=============== SCROLL ANIMATIONS ===============*/
 @keyframes fade-in {
